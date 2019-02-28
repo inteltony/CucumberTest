@@ -65,12 +65,15 @@
               <artifactId>maven-failsafe-plugin</artifactId>
               <version>3.0.0-M3</version>
 		        <executions>
-		          <execution>
+		          <execution>	  
 		            <configuration>
 			        <includes>
 			          <include>**/*runnerFile.class</include>
 			        </includes>
 			      </configuration>
+			      <goals>
+			      <goal>Test</goal>
+			      </goals>
 		          </execution>
 		        </executions>
 		      </plugin> 		      		     
