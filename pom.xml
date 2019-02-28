@@ -68,12 +68,9 @@
 		          <execution>	  
 		            <configuration>
 			        <includes>
-			          <include>**/*runnerFile.class</include>
+			          <include>src/test/java/stepDefinition/runnerFile.class</include>
 			        </includes>
 			      </configuration>
-			      <goals>
-			      <goal>Test</goal>
-			      </goals>
 		          </execution>
 		        </executions>
 		      </plugin> 		      		     
