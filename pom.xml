@@ -53,13 +53,27 @@
 		          <resource>
 		          <directory>src/test/resources</directory>
 		          <includes>
-          <include>**/*.*</include>
-          </includes>
+          		  <include>**/*.*</include>
+          		  </includes>
 		          </resource>
-		          </resources>
+		          </resources>		          
 		           <encoding>UTF-8</encoding>          
 		        </configuration>
-		      </plugin>	  		      		     
+		      </plugin>	 
+		      <plugin>
+		      <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-failsafe-plugin</artifactId>
+              <version>3.0.0-M3</version>
+		        <executions>
+		          <execution>
+		            <configuration>
+			        <includes>
+			          <include>**/*runnerFile.class</include>
+			        </includes>
+			      </configuration>
+		          </execution>
+		        </executions>
+		      </plugin> 		      		     
       	</plugins>
   	</build>
 </project>
